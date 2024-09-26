@@ -7,7 +7,7 @@
 #Author: Ankam Ravi Kumar
 # START #
 THRESHOULD=40
-mailto="root"
+mailto="manjunath.imagin@gmail.com"
 HOSTNAME=$(hostname)
 
 for path in `/bin/df -h | grep -vE 'Filesystem|tmpfs' | awk '{print $5}' |sed 's/%//g'`
