@@ -19,7 +19,7 @@ done
 
 VALUE=`cat /tmp/temp | wc -l`
         if [ $VALUE -ge 1 ]; then
-        mail -s "$HOSTNAME Disk Usage is Critical" $mailto < /tmp/temp
+        mailq -s "$HOSTNAME Disk Usage is Critical" $mailto 
         fi
 
 #rm -rf /tmp/temp
